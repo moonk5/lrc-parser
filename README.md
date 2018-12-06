@@ -2,7 +2,8 @@
 **lrc-parser** is a simple LRC parser for C++
 
 # INTEGRATION
-
+['LrcParser.h'](https://github.com/moonk5/lrc-parser/blob/master/single_include/LrcParser.h)
+is the single required file in 'single_include'.
 
 # EXAMPLES
 
