@@ -31,8 +31,17 @@
 #include <string>
 #include <vector>
 
+#define LRC_PARSER_MAJOR 1
+#define LRC_PARSER_MINOR 1
+#define LRC_PARSER_PATCH 0
+
 namespace lrc
 {
+  const std::string LRC_PARSER_VERSION =
+    std::to_string(LRC_PARSER_MAJOR) + "." +
+    std::to_string(LRC_PARSER_MINOR) + "." +
+    std::to_string(LRC_PARSER_PATCH);
+
   /*
    * Various ID Tags 
    * ar = Artist, al = Album, ti = Title
@@ -247,8 +256,8 @@ namespace lrc
         return true;
       }
 
-      collection *get() {
-        return &lrc_collection;
+      collection &get() {
+        return lrc_collection;
       }
 
     private:
